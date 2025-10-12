@@ -1,1 +1,1 @@
-# Black-Scholes-Heatmap
+# Black-Scholes Option Pricing Heatmap
