@@ -1,32 +1,24 @@
 # Black-Scholes Option Pricing Heatmap
 
-[App](https://blackscholesheatmap.streamlit.app/)
+[Live App](https://blackscholesheatmap.streamlit.app/)
 
-# Introduction
-An interactive GUI that creates heatmaps for call and put prices based on user selected inputs into the Black-Scholes Option pricing method.
+## Overview
+A Python-based interactive application that visualizes **call and put option prices** using the Black-Scholes model. Users can explore how option prices vary with different input parameters through dynamic heatmaps, making complex financial concepts intuitive and visually accessible.
 
-# Features
-- Interactive GUI layer.
-- Automatically updating visulisations.
-- Specify Tick density
-- Define minimum and maximum ranges
+## Key Features
+- **Interactive GUI:** Intuitive interface built with Streamlit.  
+- **Dynamic Visualizations:** Heatmaps update in real-time based on user inputs.  
+- **Customizable Parameters:** Set tick density, and define minimum and maximum ranges for analysis.  
+- **Supports Call & Put Options:** Visualizes both types of option pricing for comprehensive analysis.
 
-# Stack
-Language: Python
+## Tech Stack
+- **Language:** Python  
+- **Framework:** Streamlit  
+- **Libraries:** NumPy, SciPy, Matplotlib, Seaborn, Math  
 
-Tools: streamlit
+## Learning & Inspiration
+- Built from inspiration by [BlackScholes App](https://blackschole.streamlit.app/)  
+- Followed guidance from [Coding Jesus](https://www.youtube.com/watch?v=lY-NP4X455U)
 
-Packages: 
-- scipy
-- matplotlib
-- seaborn
-- numpy
-- math
-
-- # Inspiration / Sources
-
-[Main Inspiration](https://blackschole.streamlit.app/)
-
-[Coding Jesus](https://www.youtube.com/watch?v=lY-NP4X455U)
-
-Completed 2025-09-26
+## Completion Date
+September 26, 2025
