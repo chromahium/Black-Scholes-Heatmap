@@ -18,8 +18,8 @@ This project was fully implemented by me through reverse-engineering an existing
 - **Libraries:** NumPy, SciPy, Matplotlib, Seaborn, Math  
 
 ## Learning & Inspiration
-- Built from inspiration by [BlackScholes App](https://blackschole.streamlit.app/)  
-- Followed guidance from [Coding Jesus](https://www.youtube.com/watch?v=lY-NP4X455U)
+- [BlackScholes App](https://blackschole.streamlit.app/)  
+- [Coding Jesus](https://www.youtube.com/watch?v=lY-NP4X455U)
 
 ## Completion Date
 September 26, 2025
