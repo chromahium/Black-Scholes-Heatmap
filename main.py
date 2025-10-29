@@ -6,7 +6,7 @@ import seaborn as sns
 import numpy as np
 
 def bsop(current, strike, ttm, rfr, vol, round):
-
+    # Derive Black-Scholes Option Price for Call and Put
     d1 = (math.log(current / strike) + (rfr + vol ** 2 * 0.5) * ttm) / (vol * math.sqrt(ttm))
     
     d2 = d1 - vol * math.sqrt(ttm)
@@ -18,13 +18,12 @@ def bsop(current, strike, ttm, rfr, vol, round):
     return f"{c:.{round}f}", f"{p:.{round}f}"
 
 def generate_ticks(min_tick, max_tick):
-    n = 15
-    #interval = (max_tick - min_tick) / n - 1
+    # Generate evenly spaced markers for graphs
     for i in np.linspace(min_tick, max_tick, int(ticks)):
         yield round(i, 4)
 
 def generate_arrays(vol_min_tick, vol_max_tick, spot_min_tick, spot_max_tick):
-
+    # Generate array based on tick values.
     vol_ticks = list(generate_ticks(vol_min_tick, vol_max_tick))    # y-axis
     spot_ticks = list(generate_ticks(spot_min_tick, spot_max_tick)) # x-axis
 
@@ -49,6 +48,7 @@ def generate_arrays(vol_min_tick, vol_max_tick, spot_min_tick, spot_max_tick):
     return call_array, put_array
 
 def get_matrix(show_call=True):
+    # Generate graphs
     call_matrix, put_matrix = generate_arrays(min_vol, max_vol, min_spot, max_spot)
 
     vol_ticks = list(generate_ticks(min_vol, max_vol))
@@ -77,8 +77,11 @@ def get_matrix(show_call=True):
     return fig
 
 def calculate_greeks():
+    # TBC
     pass
 
+
+# Main UI
 with st.sidebar:
 
     st.title("Black-Scholes Option Pricer")
